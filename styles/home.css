@@ -1,0 +1,115 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff0099;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.cta:hover {
+  background: #e60082;
+}
+
+/* Collections Section */
+.collections-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.collections-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.collection-item {
+  background: #ff66cc;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
