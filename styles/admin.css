@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Blue and Purple */
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Admin Dashboard Section */
+.admin-dashboard {
+  padding: 60px 20px;
+  background: #fff0f6; /* Soft Pink */
+  text-align: center;
+}
+
+.admin-dashboard h1 {
+  font-size: 42px;
+  color: #6a11cb; /* Purple */
+  margin-bottom: 40px;
+}
+
+.admin-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Admin Section */
+.admin-section {
+  background: white;
+  padding: 30px;
+  border: 2px solid #ff66cc; /* Pink */
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.admin-section h2 {
+  font-size: 24px;
+  color: #2575fc; /* Blue */
+  margin-bottom: 20px;
+}
+
+.admin-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-section label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.admin-section input,
+.admin-section select,
+.admin-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-section button {
+  padding: 12px;
+  background: #6a11cb; /* Purple */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-section button:hover {
+  background: #ff0099; /* Pink */
+}
+
+/* Sales Data Table */
+.sales-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-data th,
+.sales-data td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.sales-data th {
+  background-color: #2575fc; /* Blue */
+  color: white;
+}
+
+.sales-data td {
+  background-color: #f9f9f9;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
