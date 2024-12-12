@@ -216,3 +216,11 @@
   text-decoration: none;
   font-size: 16px;
 }
+
+.newsletter-signup {
+  background-color: #6a11cb; /* Purple */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}

@@ -11,11 +11,11 @@
       <nav class="navbar">
         <div class="logo">Flashy Glamour</div>
         <ul class="nav-links">
-          <li><a href="../pages/home.html">Home</a></li>
-          <li><a href="../pages/products.html">Products</a></li>
-          <li><a href="../pages/contact-about.html">About Us</a></li>
-          <li><a href="../pages/user.html">Account</a></li>
-          <li><a href="../pages/cart.html">Cart</a></li>
+          <li><a href="../pages/index.html">Home</a></li>
+          <li><a href="./pages/products.html">Products</a></li>
+          <li><a href="./pages/contact-about.html">About Us</a></li>
+          <li><a href="./pages/user.html">Account</a></li>
+          <li><a href="./pages/cart.html">Cart</a></li>
         </ul>
       </nav>
       <div class="hero-content">
@@ -26,6 +26,25 @@
 
     <section id="products" class="products-section">
       <h2>Featured Products</h2>
+      <div class="filters">
+        <label for="price-range">Price Range</label>
+        <input
+          type="range"
+          id="price-range"
+          name="price-range"
+          min="0"
+          max="1000"
+          step="10"
+        />
+
+        <label for="size">Size</label>
+        <select id="size" name="size">
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+        </select>
+      </div>
+
       <div class="products-grid">
         <div class="product-card">
           <img src="https://via.placeholder.com/200" alt="Product 1" />
