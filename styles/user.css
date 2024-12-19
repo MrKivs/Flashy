@@ -157,7 +157,6 @@
   margin-right: 50px;
   box-shadow: 2px 3px 5px rgb(179, 173, 173);
   padding: 10px;
-
 }
 .cart-item {
   display: flex;
@@ -166,24 +165,24 @@
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-.cart-item div:nth-child(2){
+.cart-item div:nth-child(2) {
   width: 200px;
   display: flex;
-  flex:0;
+  flex: 0;
 }
 .cart-item button {
   padding: 5px 10px;
-  margin-left:10px;
+  margin-left: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.cart-item button.remove{
+.cart-item button.remove {
   background-color: #ff6b6b;
   color: white;
 }
-.cart-item button.update{
+.cart-item button.update {
   background-color: #6a11cb;
   color: white;
 }
@@ -192,8 +191,8 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 20px;
-  margin-left:50px;
-  margin-right:50px;
+  margin-left: 50px;
+  margin-right: 50px;
   justify-content: right;
   align-items: center;
   padding: 10px;
@@ -250,3 +249,4 @@
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+}

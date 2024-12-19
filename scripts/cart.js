@@ -36,7 +36,7 @@ function updateCartUI() {
   }
   emptyMessage.style.display = "none";
 
-  let total = 0;
+  let total = 0; 
   cart.forEach((item) => {
     const cartItem = document.createElement("li");
     cartItem.className = "cart-item";
@@ -53,6 +53,9 @@ function updateCartUI() {
     </div>
       `;
     cartContainer.appendChild(cartItem);
+    cartItem.querySelector(".remove").addEventListener("click", () => {
+      deleteFromCart(item.id);
+    });
     total += item.price * item.quantity;
   });
 

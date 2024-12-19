@@ -1,0 +1,32 @@
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #2575fc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+  }
+}

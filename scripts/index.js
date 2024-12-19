@@ -50,13 +50,13 @@ function hydrateProducts(products) {
 }
 
 function generateStars(rating, maxStars = 5) {
-  let startsHTML = "";
+  let starsHTML = "";
   for (let i = 1; i <= maxStars; i++) {
     if (i <= rating) {
-      startsHTML += "&#9733;";
+      starsHTML += "&#9733;";
     } else {
-      startsHTML += "&#9734;";
+      starsHTML += "&#9734;";
     }
   }
-  return startsHTML;
+  return starsHTML;
 }
