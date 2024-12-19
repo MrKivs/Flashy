@@ -3,6 +3,22 @@ import cart from "./data/cart.js";
 
 hydrateProducts(products);
 
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("nav-container");
+  fetch("../components/nav.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load header");
+      }
+      return response.text();
+    })
+    .then((html) => {
+      header.innerHTML = html;
+    })
+    .catch((error) => {
+      console.log("Header failed to load", error);
+    });
+});
 function addToCart(productId, quantity = 1) {
   const product = products.find((product) => product.id === productId);
   if (product) {

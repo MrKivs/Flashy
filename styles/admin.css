@@ -35,11 +35,33 @@
 
 /* Admin Dashboard Section */
 .admin-dashboard {
-  padding: 60px 20px;
-  background: #fff0f6; /* Soft Pink */
+  display: flex;
+  padding: 10px 20px;
+  background: #fde9fd; /* Soft Pink */
   text-align: center;
+  height: 100vh;
 }
 
+.admin-nav-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.admin-options {
+  list-style: none;
+  padding: 10px;
+}
+.admin-options li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.admin-options li:hover {
+  background-color: #f5f5f5bd;
+  cursor: pointer;
+}
 .admin-dashboard h1 {
   font-size: 42px;
   color: #6a11cb; /* Purple */

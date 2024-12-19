@@ -23,126 +23,25 @@
     </header>
 
     <section class="admin-dashboard">
-      <h1>Admin Dashboard</h1>
-      <div class="admin-container">
-        <!-- Add New Product -->
-        <div class="admin-section">
-          <h2>Add New Product</h2>
-          <form class="product-form">
-            <label for="product-name">Product Name</label>
-            <input
-              type="text"
-              id="product-name"
-              name="product-name"
-              placeholder="Enter product name"
-              required
-            />
-
-            <label for="product-description">Product Description</label>
-            <textarea
-              id="product-description"
-              name="product-description"
-              placeholder="Enter product description"
-              required
-            ></textarea>
-
-            <label for="product-price">Product Price</label>
-            <input
-              type="number"
-              id="product-price"
-              name="product-price"
-              placeholder="Enter product price"
-              required
-            />
-
-            <label for="product-category">Category</label>
-            <input
-              type="text"
-              id="product-category"
-              name="product-category"
-              placeholder="Enter product category"
-              required
-            />
-
-            <label for="product-image">Product Image URL</label>
-            <input
-              type="text"
-              id="product-image"
-              name="product-image"
-              placeholder="Enter product image URL"
-              required
-            />
-
-            <button type="submit">Add Product</button>
-          </form>
-        </div>
-
-        <!-- Change Design for Holidays -->
-        <div class="admin-section">
-          <h2>Change Design for Holidays</h2>
-          <form class="holiday-design-form">
-            <label for="holiday-theme">Select Holiday Theme</label>
-            <select id="holiday-theme" name="holiday-theme">
-              <option value="christmas">Christmas</option>
-              <option value="new-year">New Year</option>
-              <option value="halloween">Halloween</option>
-              <option value="easter">Easter</option>
-            </select>
-
-            <label for="holiday-banner">Holiday Banner URL</label>
-            <input
-              type="text"
-              id="holiday-banner"
-              name="holiday-banner"
-              placeholder="Enter holiday banner URL"
-              required
-            />
-
-            <button type="submit">Update Design</button>
-          </form>
-        </div>
-
-        <!-- Product Sales Overview -->
-        <div class="admin-section">
-          <h2>Product Sales Overview</h2>
-          <p>
-            This section will display product sales data once connected to the
-            back-end system.
-          </p>
-          <div class="sales-data">
-            <table>
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Total Sales</th>
-                  <th>Revenue</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Elegant Dress</td>
-                  <td>120</td>
-                  <td>$14400</td>
-                </tr>
-                <tr>
-                  <td>Floral Top</td>
-                  <td>80</td>
-                  <td>$4800</td>
-                </tr>
-                <tr>
-                  <td>Stylish Jacket</td>
-                  <td>50</td>
-                  <td>$7500</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <div class="admin-nav-container" id="admin-nav-container">
+        <ul class="admin-options" id="admin-options">
+          <li data-view="add-product">Products Form</li>
+          <li data-view="holiday">Holiday Decorations</li>
+          <li data-view="analytics">Product Analytics</li>
+          <li data-view="total-sales">Total Sales</li>
+          <li data-view="offers">Offers</li>
+        </ul>
+      </div>
+      <div class="admin-content">
+        <h1>Admin Dashboard</h1>
+        <div class="admin-container" id="admin-container"></div>
       </div>
     </section>
 
     <footer class="footer">
       <p>&copy; 2024 Flashy Glamour Admin. All Rights Reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../scripts/admin.js"></script>
   </body>
 </html>
