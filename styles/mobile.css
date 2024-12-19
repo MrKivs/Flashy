@@ -1,6 +1,6 @@
 .nav-links {
-  display: none;
-  flex-direction: column;
+  display: flex;
+
   gap: 10px;
 }
 
@@ -23,7 +23,7 @@
     position: absolute;
     top: 60px;
     right: 10px;
-    background: #2575fc;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     padding: 20px;
     border-radius: 5px;
     width: 200px;
